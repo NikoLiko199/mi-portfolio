@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Mi Portfolio Creativo</title>
+    <style>
+
+        body { 
+    font-family: sans-serif; 
+    padding: 20px; 
+    background-image: url('WP/ChillWP.jpg'); 
+    background-size: cover; 
+    background-attachment: fixed; 
+    color: white;
+}
+
+        nav ul { list-style: none; padding: 0; display: flex; gap: 20px; }
+        nav li { position: relative; }
+        
+        /* Estilo para la subsección oculta */
+        .submenu { 
+            display: none; 
+            position: absolute; 
+            background: rgb(255, 255, 255); 
+            padding: 10px; 
+            border: 1px solid #ccc;
+        }
+        
+        /* Muestra la subsección al poner el cursor encima */
+        .Menu3D:hover .submenu { 
+            display: block; 
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>Mi Portfolio🎨</h1>
+        <h2><p>Bievenido a mi portafolio! aqui puedes ver todo el trabajo que he hecho.</p></h2>
+    </header>
+
+    <nav>
+        <ul>
+            
+            <!-- Menu 3D -->
+            <li class="Menu3D">
+                <strong><a href="#">Modelado 3D ▼</a></strong>
+                <ul class="submenu">
+                    <li><a href="#">Animación</a></li>
+                    <li><a href="Modelos3D.html">Modelos</a></li>
+                </ul>
+            </li>
+
+            <!-- Menu 2D -->
+            <li class="Menu3D">
+                <strong><a href="#">Dibujo ▼</a></strong>
+                <ul class="submenu">
+                    <li><a href="#">Animación</a></li>
+                    <li><a href="arte2D.html">Arte 2D</a></li> <!-- Corregí el nombre a arte.html que era tu archivo -->
+                </ul>
+            </li>
+            
+            <!-- Menu Musica -->
+            <li><strong><a href="musica.html">🎵Música</a></strong></li>
+
+
+            <!-- Menu Actor -->
+            <li class="Menu3D">
+                <strong><a href="#">🎤Actor de voz ▼</a></strong>
+                <ul class="submenu">
+                    <li><a href="actor-videojuegos.html">Videojuegos🎮</a></li>
+                    <li><a href="actor-animaciones.html">Animaciones🎨</a></li>
+                    <li><a href="actor-series.html">Series📃📺</a></li>
+                    <li><a href="actor-covers.html">Covers🎤</a></li>
+                </ul>
+            </li>
+
+            <li class="Menu3D">
+                <strong><a href="#">Proyectos ▼</a></strong>
+                <ul class="submenu">
+                    <li><a href="#">Terminados✅</a></li>
+                    <li><a href="#">En progreso</a></li>
+                </ul>
+            </li>
+
+        </ul>
+    </nav>
+</body>
+
+</html>

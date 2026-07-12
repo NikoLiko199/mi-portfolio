@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Mi Portfolio Creativo</title>
+    <style>
+
+        body { 
+    font-family: sans-serif; 
+    padding: 20px; 
+    background-image: url('WP/ArtistWP.jpg'); 
+    background-size: cover; 
+    background-attachment: fixed; 
+    color: white;
+}
+
+        nav ul { list-style: none; padding: 0; display: flex; gap: 20px; }
+        nav li { position: relative; }
+        
+        /* Estilo para la subsección oculta */
+        .submenu { 
+            display: none; 
+            position: absolute; 
+            background: rgb(255, 255, 255); 
+            padding: 10px; 
+            border: 1px solid #ccc;
+        }
+        
+        /* Muestra la subsección al poner el cursor encima */
+        .Menu3D:hover .submenu { 
+            display: block; 
+        }
+    </style>
+</head>
+
+    <header>
+        <h1>Galería de Arte 2D</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <!-- Este botón mágico sirve para volver a la portada principal -->
+            <li><a href="index.html">◀ Volver al Inicio</a></li>
+        </ul>
+        
+    </nav>
+
+    <main>
+        <img src="Arte2D/Unica.png" alt="Referencia de mi personaje">
+    </main>
+
+</body>
+
+</html>

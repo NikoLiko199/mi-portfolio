@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Mi Portfolio Creativo</title>
+    <style>
+
+        body { 
+    font-family: sans-serif; 
+    padding: 20px; 
+    background-image: url('WP/estudioWP.jpg'); 
+    background-size: cover; 
+    background-attachment: fixed; 
+    color: rgb(255, 255, 255);
+}
+
+        nav ul { list-style: none; padding: 0; display: flex; gap: 20px; }
+        nav li { position: relative; }
+        
+        /* Estilo para la subsección oculta */
+        .submenu { 
+            display: none; 
+            position: absolute; 
+            background: rgb(255, 255, 255); 
+            padding: 10px; 
+            border: 1px solid #ccc;
+        }
+        
+        /* Muestra la subsección al poner el cursor encima */
+        .MenuMusica:hover .submenu { 
+            display: block; 
+        }
+    </style>
+</head>
+
+<header>
+     <h1> Todos mis covers!🎤</h1> <!-- Titulo de la pagina --> 
+     <strong><p>Aqui tengo videos de los covers en donde yo cante</p></strong>
+
+</header>
+
+<body> <!-- Este es el cuerpo! Es todo lo visible para el usuario -->
+    <nav>
+        <ul>
+            <!-- Este botón mágico sirve para volver a la portada principal -->
+            <li><a href="index.html">◀ Volver al Inicio</a></li>
+        </ul>
+        
+    </nav>
+
+</body>
+
+</html>
