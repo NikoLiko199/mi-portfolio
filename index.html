@@ -2,17 +2,16 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <title>Mi Portfolio de trabajo!</title>
+    <title data-i18n="titulo_pestana">Mi Portfolio de trabajo!</title>
     <style>
-
         body { 
-    font-family: sans-serif; 
-    padding: 20px; 
-    background-image: url('WP/ChillWP.jpg'); 
-    background-size: cover; 
-    background-attachment: fixed; 
-    color: white;
-}
+            font-family: sans-serif; 
+            padding: 20px; 
+            background-image: url('WP/ChillWP.jpg'); 
+            background-size: cover; 
+            background-attachment: fixed; 
+            color: white;
+        }
 
         nav ul { list-style: none; padding: 0; display: flex; gap: 20px; }
         nav li { position: relative; }
@@ -30,14 +29,32 @@
         .Menu3D:hover .submenu { 
             display: block; 
         }
+
+        /* Estilo rápido para los botones de idioma */
+        .lang-switch {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+        }
+        .lang-switch button {
+            cursor: pointer;
+            padding: 5px 10px;
+            font-weight: bold;
+        }
     </style>
 </head>
 
 <body>
 
+    <!-- Botones para cambiar de idioma -->
+    <div class="lang-switch">
+        <button onclick="cambiarIdioma('es')">ES</button>
+        <button onclick="cambiarIdioma('en')">EN</button>
+    </div>
+
     <header>
-        <h1>Mi Portfolio🎨</h1>
-        <h2><p>Bienvenido a mi portafolio! aqui puedes ver los trabajos en los que me especializo.</p></h2>
+        <h1 data-i18n="header_titulo">Mi Portfolio🎨</h1>
+        <h2><p data-i18n="header_subtitulo">Bienvenido a mi portafolio! aqui puedes ver los trabajos en los que me especializo.</p></h2>
     </header>
 
     <nav>
@@ -45,47 +62,49 @@
             
             <!-- Menu 3D -->
             <li class="Menu3D">
-                <strong><a href="#">Modelado 3D ▼</a></strong>
+                <strong><a href="#" data-i18n="menu_3d">Modelado 3D ▼</a></strong>
                 <ul class="submenu">
-                    <li><a href="#">Animación</a></li>
-                    <li><a href="Modelos3D.html">Modelos</a></li>
+                    <li><a href="#" data-i18n="sub_animacion">Animación</a></li>
+                    <li><a href="Modelos3D.html" data-i18n="sub_modelos">Modelos</a></li>
                 </ul>
             </li>
 
             <!-- Menu 2D -->
             <li class="Menu3D">
-                <strong><a href="#">Dibujo ▼</a></strong>
+                <strong><a href="#" data-i18n="menu_2d">Dibujo ▼</a></strong>
                 <ul class="submenu">
-                    <li><a href="#">Animación</a></li>
-                    <li><a href="arte2D.html">Arte 2D</a></li> <!-- Corregí el nombre a arte.html que era tu archivo -->
+                    <li><a href="#" data-i18n="sub_animacion">Animación</a></li>
+                    <li><a href="arte2D.html" data-i18n="sub_arte2d">Arte 2D</a></li>
                 </ul>
             </li>
             
             <!-- Menu Musica -->
-            <li><strong><a href="musica.html">🎵Música</a></strong></li>
-
+            <li><strong><a href="musica.html" data-i18n="menu_musica">🎵Música</a></strong></li>
 
             <!-- Menu Actor -->
             <li class="Menu3D">
-                <strong><a href="#">🎤Actor de voz ▼</a></strong>
+                <strong><a href="#" data-i18n="menu_actor">🎤Actor de voz ▼</a></strong>
                 <ul class="submenu">
-                    <li><a href="actor-videojuegos.html">Videojuegos🎮</a></li>
-                    <li><a href="actor-animaciones.html">Animaciones🎨</a></li>
-                    <li><a href="actor-series.html">Series📃📺</a></li>
-                    <li><a href="actor-covers.html">Covers🎤</a></li>
+                    <li><a href="actor-videojuegos.html" data-i18n="sub_videojuegos">Videojuegos🎮</a></li>
+                    <li><a href="actor-animaciones.html" data-i18n="sub_animaciones">Animaciones🎨</a></li>
+                    <li><a href="actor-series.html" data-i18n="sub_series">Series📃📺</a></li>
+                    <li><a href="actor-covers.html" data-i18n="sub_covers">Covers🎤</a></li>
                 </ul>
             </li>
 
+            <!-- Menu Proyectos -->
             <li class="Menu3D">
-                <strong><a href="#">Proyectos ▼</a></strong>
+                <strong><a href="#" data-i18n="menu_proyectos">Proyectos ▼</a></strong>
                 <ul class="submenu">
-                    <li><a href="#">Terminados✅</a></li>
-                    <li><a href="#">En progreso</a></li>
+                    <li><a href="#" data-i18n="sub_terminados">Terminados✅</a></li>
+                    <li><a href="#" data-i18n="sub_progreso">En progreso</a></li>
                 </ul>
             </li>
 
         </ul>
     </nav>
-</body>
 
+    <!-- Cargamos la tabla de traducción al final -->
+    <script src="i18n.js"></script>
+</body>
 </html>
